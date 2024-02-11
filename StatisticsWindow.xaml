@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfAppDop2Hw0702Dapper.StatisticsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppDop2Hw0702Dapper"
+        mc:Ignorable="d"
+        Title="StatisticsWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Статистика загадок" 
+                   FontWeight="Bold"
+                   FontSize="18"
+                   HorizontalAlignment="Center"
+                   Margin="0 10"/>
+        <StackPanel Grid.Row="1" Margin="20">
+            <TextBlock Text="Всего загадок: 10"/>
+            <TextBlock Text="Решенных загадок: 7"/>
+            <TextBlock Text="Нерешенных загадок: 3"/>
+        </StackPanel>
+    </Grid>
+</Window>

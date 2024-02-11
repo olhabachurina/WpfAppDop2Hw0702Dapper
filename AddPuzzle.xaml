@@ -1,0 +1,30 @@
+﻿<Window x:Class="WpfAppDop2Hw0702Dapper.AddPuzzle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppDop2Hw0702Dapper"
+        mc:Ignorable="d"
+        Title="AddPuzzle" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Текст загадки:"/>
+        <TextBox Grid.Row="1" Margin="0,5" x:Name="txtPuzzleText"/>
+        <Label Grid.Row="2" Content="Ответ:"/>
+        <TextBox Grid.Row="3" Margin="0,5" x:Name="txtPuzzleAnswer"/>
+        <Label Grid.Row="4" Content="Уровень сложности (1-5):"/>
+        <ComboBox Grid.Row="5" Margin="0,5" x:Name="cmbDifficultyLevel" SelectedIndex="0">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+        <Button Grid.Row="6" Content="Добавить" Margin="10" VerticalAlignment="Bottom" Click="Add_Click"/>
+    </Grid>
+</Window>
